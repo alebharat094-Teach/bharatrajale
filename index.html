@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Bharat Raj Ale Teach</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    background-image: url("skull-bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header {
+    padding: 30px 20px;
+    text-align: center;
+    background: rgba(0,0,0,0.65);
+    border-bottom: 1px solid #333;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 17px;
+}
+
+nav {
+    background: #111;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav a:hover {
+    color: #ffc400;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+section {
+    background: rgba(0,0,0,0.78);
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    border: 1px solid #333;
+}
+
+section h2 {
+    margin-bottom: 15px;
+    color: #ffc400;
+}
+
+.classes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.class-button {
+    background: #111;
+    color: white;
+    border: 1px solid #333;
+    padding: 18px 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.class-button:hover {
+    background: #ffc400;
+    color: #000;
+    transform: translateY(-3px);
+}
+
+.class-content {
+    display: none;
+    margin-top: 12px;
+    padding: 15px;
+    background: rgba(15,15,15,0.05);
+    border-left: 4px solid #ffc400;
+    border-radius: 8px;
+}
+
+.class-content h3 {
+    color: #ffc400;
+    margin-bottom: 12px;
+}
+
+.class-content ul {
+    margin-left: 22px;
+    line-height: 1.8;
+}
+
+.class-content a {
+    color: #ffc400;
+}
+
+.contact-info {
+    line-height: 2;
+}
+
+.contact-info strong {
+    color: #ffc400;
+}
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #333;
+}
+
+footer span {
+    color: #ffc400;
+}
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .classes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section {
+        padding: 20px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>
+BHARAT RAJ ALE <span>TEACH</span>
+</h1>
+
+<p>
+Mathematics Teacher | Classes IV–VIII
+</p>
+
+</header>
+
+<nav>
+
+<a href="#home">Home</a>
+
+<a href="#classes">Classes</a>
+
+<a href="#about">About</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+<main>
+
+<section id="home">
+
+<h2>Welcome</h2>
+
+<p>
+Welcome to Bharat Raj Ale Teach.
+Learn Mathematics in a simple,
+clear and interesting way.
+</p>
+
+</section>
+
+<section id="classes">
+
+<h2>My Classes</h2>
+
+<div class="classes">
+
+<button class="class-button"
+onclick="openClass(4)">
+Class IV
+</button>
+
+<button class="class-button"
+onclick="openClass(5)">
+Class V
+</button>
+
+<button class="class-button"
+onclick="openClass(6)">
+Class VI
+</button>
+
+<button class="class-button"
+onclick="openClass(7)">
+Class VII
+</button>
+
+<button class="class-button"
+onclick="openClass(8)">
+Class VIII
+</button>
+
+</div>
+
+<div id="class4" class="class-content">
+
+<h3>Class IV Mathematics</h3>
+
+<p>Topics for Class IV:</p>
+
+<ul>
+<li>COMING SOON</li>
+</ul>
+
+</div>
+
+<div id="class5" class="class-content">
+
+<h3>Class V Mathematics</h3>
+
+<p>Topics for Class V:</p>
+
+<ul>
+<li>COMING SOON</li>
+</ul>
+
+</div>
+
+<div id="class6" class="class-content">
+
+<h3>Class VI Mathematics</h3>
+
+<p>Topics for Class VI:</p>
+
+<ul>
+<li>COMING SOON</li>
+</ul>
+
+</div>
+
+<div id="class7" class="class-content">
+
+<h3>Class VII Mathematics</h3>
+
+<p>Topics for Class VII:</p>
+
+<ul>
+<li>COMING SOON</li>
+</ul>
+
+</div>
+
+<div id="class8" class="class-content">
+
+<h3>Class VIII Mathematics</h3>
+
+<p>Topics for Class VIII:</p>
+
+<ul>
+<li>COMING SOON</li>
+</ul>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2>About Bharat Raj Ale Teach</h2>
+
+<div class="about-box">
+
+<h3>Bharat Raj Ale Teach</h3>
+
+<p>
+Bharat Raj Ale Teach is an educational
+website created to help students learn
+Mathematics easily.
+</p>
+
+<br>
+
+<p>
+The website provides simple learning
+materials and class-wise topics for
+students from Class IV to Class VIII.
+</p>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<div class="contact-info">
+
+<p>
+<strong>Teacher:</strong> Bharat Raj Ale
+</p>
+
+<p>
+<strong>Subject:</strong> Mathematics
+</p>
+
+<p>
+<strong>Classes:</strong> IV–VIII
+</p>
+
+<p>
+<strong>School:</strong> N/A
+</p>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+© 2026 <span>Bharat Raj Ale Teach</span>
+| Mathematics
+</p>
+
+</footer>
+
+<script>
+
+function openClass(classNumber) {
+
+    const content = document.getElementById("class" + classNumber);
+
+    if (content.style.display === "block") {
+        content.style.display = "none";
+        return;
+    }
+
+    document.querySelectorAll(".class-content").forEach(section => {
+        section.style.display = "none";
+    });
+
+    content.style.display = "block";
+
+}
+
+</script>
+
+</body>
+
+</html>
